@@ -1,9 +1,11 @@
 from flask import Flask
+from flask import render_template
+
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Index page'
+    return render_template('index.html')
 
 @app.route('/user/<username>')
 def hello(username):
