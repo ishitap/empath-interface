@@ -1,0 +1,73 @@
+/*************/
+/* VARIABLES */
+/*************/
+/**********/
+/* MIXINS */
+/**********/
+/**********/
+/* STYLES */
+/**********/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 13px "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  color: #333; }
+
+.navbar {
+  margin: 0;
+  background-color: white; }
+  .navbar .navbar-brand {
+    font-family: 'Merriweather';
+    color: black; }
+
+.jumbotron {
+  margin: 0; }
+  .jumbotron .container {
+    max-width: 1070px; }
+
+#sandbox {
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.03); }
+  #sandbox .container {
+    max-width: 1070px; }
+  #sandbox #editor {
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    height: 400px;
+    padding: 60px 60px;
+    font: 15px "Inconsolata", "Courier New", Courier, monospace;
+    line-height: 24px; }
+  #sandbox ul {
+    list-style: none; }
+    #sandbox ul li {
+      float: left;
+      clear: both;
+      padding: 4px 12px;
+      margin: 4px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 5px; }
+  #sandbox h2 {
+    font: 13px "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.5); }
+
+#createdemo {
+  background-color: #4DCDF4;
+  color: white; }
+  #createdemo h1 {
+    font-size: 36px;
+    line-height: 50px;
+    font-family: 'Merriweather';
+    letter-spacing: 1px; }
+  #createdemo p {
+    font: 13px "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+    line-height: 20px; }
+
+hr {
+  margin: 0 0 10px;
+  border-color: rgba(0, 0, 0, 0.1); }
+
+/*# sourceMappingURL=style.css.map */

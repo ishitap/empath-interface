@@ -1,0 +1,111 @@
+/*************/
+/* VARIABLES */
+/*************/
+
+$sans-serif: 13px 'Open Sans', 'Roboto', Helvetica, Arial, sans-serif;
+$monospace: 15px 'Inconsolata', 'Courier New', Courier, monospace;
+$light-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
+
+
+/**********/
+/* MIXINS */
+/**********/
+
+@mixin monotext() {
+	font: $monospace;
+	line-height: 24px;
+}
+
+
+
+/**********/
+/* STYLES */
+/**********/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font: $sans-serif;
+  line-height: 20px;
+  color: #333;
+}
+
+.navbar {
+	margin: 0;
+	background-color:white;
+
+	.navbar-brand {
+		font-family: 'Merriweather';
+		color:black;
+	}
+}
+
+.jumbotron {
+	margin:0;
+
+	.container {
+		max-width:1070px;
+	}
+}
+
+#sandbox {
+	padding-bottom: 0;
+	overflow:hidden;
+	background-color: rgba(0,0,0,0.03);
+
+	.container {
+		max-width: 1070px;
+	}
+
+	#editor {
+		background-color: white;
+		box-shadow: $light-shadow;
+		height: 400px;
+		padding: 60px 60px;
+
+		@include monotext();
+	}
+
+	ul {
+		list-style: none;
+		li {
+			float:left;
+			clear:both;
+			padding: 4px 12px;
+			margin: 4px;
+			background-color: rgba(0,0,0,0.1);
+			border-radius: 5px;
+		}
+	}
+
+	h2 {
+		font: $sans-serif;
+		color: rgba(0,0,0,0.5);
+	}
+}
+
+#createdemo {
+	background-color: #4DCDF4;
+	color:white;
+
+	h1 {
+		font-size: 36px;
+		line-height: 50px;
+		font-family: 'Merriweather';
+		letter-spacing: 1px;
+	}
+
+	p {
+		font: $sans-serif;
+		line-height: 20px;
+	}
+}
+
+hr {
+	margin: 0 0 10px;
+	border-color:rgba(0,0,0,0.1);
+}
