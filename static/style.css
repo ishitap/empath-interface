@@ -40,7 +40,8 @@ body {
     height: 400px;
     padding: 60px 60px;
     font: 15px "Inconsolata", "Courier New", Courier, monospace;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #a19b9b; }
   #sandbox ul {
     list-style: none; }
     #sandbox ul li {
