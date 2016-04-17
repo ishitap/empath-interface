@@ -58,8 +58,12 @@ body {
 	overflow:hidden;
 	background-color: rgba(0,0,0,0.03);
 
+	::-webkit-scrollbar {
+		display: none;
+	}
+
 	.container {
-		max-width: 1070px;
+		max-width: 1100px;
 	}
 
 	#editor {
@@ -73,14 +77,46 @@ body {
 
 	ul {
 		list-style: none;
+		height: 330px;
+		overflow-y: scroll;
 		li {
-			float:left;
-			clear:both;
-			padding: 4px 12px;
-			margin: 4px;
-			background-color: rgba(0,0,0,0.1);
-			border-radius: 5px;
+			padding: 8px 16px;
+			margin-bottom: 20px;
+			background-color: white;
+			box-shadow: $light-shadow;
 		}
+
+		form {
+			padding: 20px 0px;
+			padding-right: 20px;
+		}
+
+		input {
+			border: 0;
+			border-radius: 0;
+			padding: 0px 0px;
+			box-shadow: none;
+			border-style: solid;
+			border-bottom: 2px solid #4DCDF4;
+			height: 28px;
+		}
+
+		input:first-child {
+			margin-bottom: 20px;
+		}
+
+		button {
+			border: 0;
+			border-radius: 0;
+			background-color: #4DCDF4;
+			box-shadow: $light-shadow;
+			color: white;
+		}
+
+		li.selected {
+			background-color: yellow;
+		}
+
 	}
 
 	h2 {
@@ -110,3 +146,4 @@ hr {
 	margin: 0 0 10px;
 	border-color:rgba(0,0,0,0.1);
 }
+

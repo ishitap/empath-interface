@@ -32,8 +32,10 @@ body {
   padding-bottom: 0;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.03); }
+  #sandbox ::-webkit-scrollbar {
+    display: none; }
   #sandbox .container {
-    max-width: 1070px; }
+    max-width: 1100px; }
   #sandbox #editor {
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
@@ -43,14 +45,35 @@ body {
     line-height: 24px;
     color: #a19b9b; }
   #sandbox ul {
-    list-style: none; }
+    list-style: none;
+    height: 330px;
+    overflow-y: scroll; }
     #sandbox ul li {
-      float: left;
-      clear: both;
-      padding: 4px 12px;
-      margin: 4px;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 5px; }
+      padding: 8px 16px;
+      margin-bottom: 20px;
+      background-color: white;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2); }
+    #sandbox ul form {
+      padding: 20px 0px;
+      padding-right: 20px; }
+    #sandbox ul input {
+      border: 0;
+      border-radius: 0;
+      padding: 0px 0px;
+      box-shadow: none;
+      border-style: solid;
+      border-bottom: 2px solid #4DCDF4;
+      height: 28px; }
+    #sandbox ul input:first-child {
+      margin-bottom: 20px; }
+    #sandbox ul button {
+      border: 0;
+      border-radius: 0;
+      background-color: #4DCDF4;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+      color: white; }
+    #sandbox ul li.selected {
+      background-color: yellow; }
   #sandbox h2 {
     font: 13px "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
     color: rgba(0, 0, 0, 0.5); }
